@@ -1,0 +1,193 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: #0a0a0a;
+  color: #f5f5f5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Anti-Gravity Neon Effects */
+@keyframes neonPulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 8px rgba(0, 255, 200, 0.3), 0 0 24px rgba(0, 255, 200, 0.1);
+  }
+
+  50% {
+    box-shadow: 0 0 16px rgba(0, 255, 200, 0.5), 0 0 48px rgba(0, 255, 200, 0.2);
+  }
+}
+
+@keyframes neonTextGlow {
+
+  0%,
+  100% {
+    text-shadow: 0 0 8px rgba(0, 255, 200, 0.4);
+  }
+
+  50% {
+    text-shadow: 0 0 20px rgba(0, 255, 200, 0.7), 0 0 40px rgba(0, 255, 200, 0.3);
+  }
+}
+
+@keyframes floatUp {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes gradientRotate {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.neon-glow {
+  animation: neonPulse 2s ease-in-out infinite;
+}
+
+.neon-text {
+  animation: neonTextGlow 2s ease-in-out infinite;
+}
+
+.float-anim {
+  animation: floatUp 3s ease-in-out infinite;
+}
+
+.gradient-anim {
+  background-size: 200% 200%;
+  animation: gradientRotate 4s ease infinite;
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #00ffc8 0%, #00e5ff 25%, #00ffc8 50%, #7c3aed 75%, #00ffc8 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Cursor blink for typewriter */
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Quantum Mode Enhancements */
+.quantum-mode {
+  --neon-primary: #00ffc8;
+  --neon-secondary: #00e5ff;
+  --neon-accent: #7c3aed;
+}
+
+.quantum-mode .neon-glow {
+  animation: neonPulse 1.5s ease-in-out infinite;
+}
+
+.quantum-mode .neon-text {
+  animation: neonTextGlow 1.5s ease-in-out infinite;
+}
+
+/* Pulse ring for environmental gauges */
+@keyframes pulseRing {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
