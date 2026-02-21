@@ -1,4 +1,4 @@
-🚛 Fleet Intelligence & Management System
+**🚛 Fleet Intelligence & Management System**
 
 An enterprise-grade Fleet Management & Analytics Platform built with React, Tailwind CSS, and advanced data visualization tools.
 
@@ -203,3 +203,4 @@ Smart mobility enterprises
 📌 Project Status
 
 This project simulates a production-ready fleet intelligence dashboard with AI-powered analytics and real-time behavior.
+
