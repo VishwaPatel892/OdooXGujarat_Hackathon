@@ -6,7 +6,7 @@ This SaaS-style admin interface allows dispatchers to track routes, vehicles, dr
 ---
 
 PRESENTATION LINK
-https://drive.google.com/drive/folders/1Hign7cGbfJhEyqoOwEk8PJazZ5wqRkYS?usp=drive_link
+https://drive.google.com/drive/folders/1Hign7cGbfJhEyqoOwEk8PJazZ5wqRkYS?usp=sharing
 
 ## ✨ Features
 
@@ -147,5 +147,6 @@ Built as a modern logistics SaaS dashboard concept.
 ---
 
 ⭐ If you like this project, consider giving it a star!
+
 
 
